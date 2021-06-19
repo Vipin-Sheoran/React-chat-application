@@ -1,0 +1,235 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.side__left{
+    flex: 0.20;
+    height: 100vh;
+    background-color: #ff9800;
+    color: white;
+    /* background: #333744; */
+    /* width: 225px; */
+    overflow-y: scroll
+}
+.side__leftclick{
+    flex: 0.20;
+    height: 100vh;
+    background-color: #ff9800;
+    color: white;
+    /* background: #333744; */
+    /* width: 225px; */
+    overflow-y: scroll
+}
+.right2click{
+    flex: 0.8;
+    background-color: #ff9800;
+    width: 100%;
+    /* flex-grow: 1;  */
+    display: flex;
+    flex-direction: column;
+    max-height: 87vh;
+    overflow: scroll;
+}
+.side__right2{
+    flex: 0.80;
+    background-color: #ff9800;
+    width: 100%;
+    /* flex-grow: 1;  */
+    display: flex;
+    flex-direction: column;
+    max-height: 87vh;
+    overflow: scroll;
+    
+    
+}
+.side__right1{
+    overflow: scroll;
+    
+}
+.side__right2::-webkit-scrollbar {
+    display: none;
+  }
+.side__left div{
+    background-color: black;
+    padding: 3px;
+    
+}
+.side__leftclick div{
+    background-color: black;
+    padding: 3px;
+}
+/* .chat__sidebar {
+    height: 100vh;
+    color: white;
+    background: #333744;
+    width: 225px;
+    overflow-y: scroll
+} */
+.footer{
+  
+    position: fixed;
+    bottom: 0;   
+    width: 100%;
+    margin-bottom: 20px;
+   background-color: rgb(212, 202, 204);
+   padding-bottom: 15px;
+   background-color: black;
+   padding-top: 13px;
+}
+.footer input{
+   
+    margin-left: 25px;
+    border: 1px solid rgb(109, 103, 103);
+    border-radius: 10px;
+    width: 50%;
+    padding: 8px;
+}
+.footer button{
+    margin: 5px;
+    border: 1px solid rgb(109, 103, 103);
+    border-radius: 10px;
+    /* bottom: 0; */
+    cursor: pointer;
+    padding: 7px;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    transition: background .3s ease;
+   
+}
+
+.footer button:hover {
+    background: #6b47b8;
+  }
+  
+.footer  button:disabled {
+    cursor: default;
+    background: #7c5cbf94;
+  }
+
+.display__message1 {
+    
+    margin-top: 70px;
+    
+}
+.display__message2 {
+    /* background-color: rgb(234, 243, 234); */
+    background-color: #fff;
+    width: fit-content;
+    margin: 12px;
+    border-radius: 7px;
+    scroll-behavior: smooth;
+    padding: 5px;
+    transition:all 0.7s;
+  
+}
+.display__message2:hover{
+ background-color: greenyellow;
+}
+.transform{
+    background-color: #fff;
+    width: fit-content;
+    margin: 12px;
+    border-radius: 7px;
+    scroll-behavior: smooth;
+}
+
+h4{
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+p{
+    /* padding-top: 7px; */
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+}
+.roomname{
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding: 3px;
+    color: white;
+    display: flex;
+    border-radius: 1px;
+}
+.roomname button{
+    opacity: 0;
+}
+h3{
+    padding: 15px;
+    flex: 0.85;
+    margin-right: 250px;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+}
+.time p{
+    padding-top: 7px;
+    color: blueviolet;
+    font-size: 14px;
+}
+.head{
+    opacity: 0;
+}
+@media screen and (max-width: 600px) {
+    
+    .side__left{
+    flex: 1;
+    transition:all 0.5s;
+    }
+    .side__leftclick{
+        flex: 0;
+        transition:all 0.5s;
+    }
+    .side__right2{
+        flex: 0;
+        /* opacity: 0; */
+        height:100%;
+        
+        margin-bottom: 3px;
+    }
+    .right2click{
+        flex: 1;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        padding-top: 14px;
+        
+       
+    }
+    .footer input{
+        width: 33%;
+        padding: 8px;
+    }
+    .roomname h3{
+     
+        margin: auto;
+    }
+    .head{
+        opacity: 100%;
+        background-color: green;
+        padding: 15px;
+    }
+   .roomname button{
+       opacity: 1;
+       padding-top: 17px;
+       margin: 5px;
+    border: 1px solid rgb(109, 103, 103);
+    border-radius: 50px;
+    /* bottom: 0; */
+    cursor: pointer;
+    padding: 1px;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    transition: background .3s ease;
+   }
+}

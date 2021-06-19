@@ -1,0 +1,1 @@
+transition: margin-right 2s, color 1s;
